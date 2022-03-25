@@ -1,5 +1,7 @@
-function App() {
-  return <div>Hello React!</div>;
-}
+import ReactDOM from "react-dom";
+import App from "./App";
 
-export default App;
+ReactDOM.render(
+  <App />, 
+  document.getElementById("root")
+);
