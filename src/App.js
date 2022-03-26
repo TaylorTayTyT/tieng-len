@@ -1,6 +1,8 @@
 
 import "./App.css"
 import Card from "./Components/Card";
+import Board from "./Components/Board";
+const canvas = document.getElementById("canv");
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
         <h1>Tieng Len</h1>
       </div>
       <div className = "card">
-        <Card/>
+        <Card
+          ctx = {canvas}
+        />
       </div>
     </div>
   )
