@@ -67,3 +67,11 @@ canvas {
     transform: rotate(360deg);
   }
 }
+
+.Title{
+  bottom: 0;
+}
+
+Box{
+  color: aqua;
+}
