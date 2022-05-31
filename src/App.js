@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { Container } from "@material-ui/core";
 import Grid from '@mui/material/Grid';
+import { useEffect, useState } from "react";
 
 const canvas = document.getElementById("canv");
 
@@ -23,6 +24,13 @@ const Item = styled(Paper)(({ theme }) => (
 );
 
 function App() {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    fetch("/users")
+    .then(res => res.json())
+    .then(data => setData(data))
+  }, []);
+   
   return (
     <div>
       <div className="headerTitle">

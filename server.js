@@ -19,7 +19,12 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     console.log("hi");
-    res.render("home.njk", {t: "Taylor"})
+    res.json(
+        {
+            name: "taylor"
+        }
+    )
+    //res.render("home.njk", {t: "Taylor"})
 })
 
 const userRouter = require("./routes/users");
@@ -27,4 +32,4 @@ const userRouter = require("./routes/users");
 //redirects tp the routes in ./routes/users files
 app.use("/users", userRouter);
 
-app.listen(3000);
+app.listen(3001);

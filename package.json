@@ -26,8 +26,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "taylor": "concurrently --kill-others \"npm run start\" \"npm run devStart\""
   },
+  "proxy": "http://localhost:3001",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -47,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^7.2.1",
     "nodemon": "^2.0.16"
   }
 }
