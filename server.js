@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express(); 
-const nunjucks = require("nunjucks")
+const nunjucks = require("nunjucks");
+const cors = require("cors");
 
 nunjucks.configure(__dirname + "/views", {
     autoescape: true, 
@@ -16,6 +17,8 @@ app.use(express.urlencoded({extended: true}));
 
 //lets you parse json info
 app.use(express.json());
+
+app.use(cors());
 
 app.get("/", (req, res) => {
     console.log("hi");

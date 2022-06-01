@@ -26,15 +26,18 @@ const Item = styled(Paper)(({ theme }) => (
 function App() {
   const [data, setData] = useState({});
   useEffect(() => {
-    fetch("/users")
+    fetch("http://localhost:3001/")
     .then(res => res.json())
     .then(data => setData(data))
   }, []);
+
+  console.log(data);
    
   return (
     <div>
       <div className="headerTitle">
         <h1>Tieng Len</h1>
+        {data.name}
       </div>
       <div className="card">
         <Card
