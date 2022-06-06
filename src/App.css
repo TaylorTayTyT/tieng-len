@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -50,6 +52,10 @@ canvas {
 .button1:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+.info {
+  padding: 10px;
 }
 
 

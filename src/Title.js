@@ -3,9 +3,12 @@ import { Container, Grid, Paper } from '@mui/material';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import * as React from 'react';
+import topBar from './themes';
+import logo from "./Studio_Project.png"
+import GameBox from "./GameBox"
 
 const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#f2bdcb',
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#00000000',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -14,37 +17,47 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Title() {
     return (
+        <div>
         <Container className='topBar' maxWidth="xl" sx={{ height: "300px" }}>
             <Box sx={{ color: 'primary.contrastText', p: 2, height: "10%", textAlign: 'center', fontFamily: 'roboto', }}>
-                <Grid container spacing={1} color="#f2bdcb">
-                    <Grid item xs={3} md={3}>
-                        <Item sx={{ color: "#f2bdcb" }}>
-                            <Button variant='text' color="primary" className='about'>
+                <Grid container spacing={1} style={{ color: topBar.palette.primary.main, background: topBar.palette.secondary.main}}>
+                    <Grid item xs={2} md={2}>
+                        <Item>
+                            <Button variant='text' className='topabout'>
                                 about
                             </Button>
 
                         </Item>
                     </Grid>
-                    <Grid item xs={3} md={3}>
-                        <Item sx={{ color: "#f2bdcb" }}><Button variant='text' color="primary" className='contact'>
-                            contact
-                        </Button></Item>
+                    <Grid item xs={2} md={2}>
+                        <Item >
+                            <Button variant='text' className='topcontact'>
+                                contact
+                            </Button></Item>
                     </Grid>
-                    <Grid item xs={3} md={3}>
-                        <Item sx={{ color: "#f2bdcb" }}>
-                            <Button variant='text' color="primary" className='projects'>
+                    <Grid item xs={4} md ={4}>
+                        <img src = {logo} style = {{maxWidth: "300px"}}></img>
+                    </Grid>
+                    <Grid item xs={2} md={2}>
+                        <Item>
+                            <Button variant='text' className='topprojects'>
                                 projects
                             </Button>
                         </Item>
                     </Grid>
-                    <Grid item xs={3} md={3}>
-                        <Item sx={{ color: "#f2bdcb" }}><Button variant='text' color="primary" className='fun'>
-                            fun
-                        </Button></Item>
+                    <Grid item xs={2} md={2}>
+                        <Item>
+                            <Button variant='text' className='topfun'>
+                                fun
+                            </Button>
+                        </Item>
                     </Grid>
                 </Grid>
             </Box>
         </Container>
+        <GameBox/>
+        </div>
+        
 
     )
 }
