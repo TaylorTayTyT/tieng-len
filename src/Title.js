@@ -6,6 +6,7 @@ import * as React from 'react';
 import topBar from './themes';
 import logo from "./Studio_Project.png"
 import GameBox from "./GameBox"
+import about from './functionality/about';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#00000000',
@@ -23,7 +24,7 @@ function Title() {
                 <Grid container spacing={1} style={{ color: topBar.palette.primary.main, background: topBar.palette.secondary.main}}>
                     <Grid item xs={2} md={2}>
                         <Item>
-                            <Button variant='text' className='topabout'>
+                            <Button variant='text' className='topabout' onClick={about}>
                                 about
                             </Button>
 
@@ -36,7 +37,7 @@ function Title() {
                             </Button></Item>
                     </Grid>
                     <Grid item xs={4} md ={4}>
-                        <img src = {logo} style = {{maxWidth: "300px"}}></img>
+                        <img src = {logo} style = {{maxWidth: "300px"}} alt = "logo"></img>
                     </Grid>
                     <Grid item xs={2} md={2}>
                         <Item>

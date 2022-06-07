@@ -1,5 +1,5 @@
 function about() {
-    //something
+    console.log("clicked");
 }
 
 export default about; 

@@ -4,11 +4,11 @@ import "./App.css"
 function GameBox() {
     return (
 
-        <Container className='gameContainer' maxWidth="xl" sx={{ height: "1200px", fontFamily: 'roboto' }} style={{ paddingTop: "50px" }}>
-            <Box bgcolor={"white"} sx={{ height: "20%" }} className="info">
-                <h1>heyooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</h1>
+        <Container className='gameContainer' maxWidth="xl" sx={{ height: "1600px", fontFamily: 'roboto' }} style={{ paddingTop: "50px" }}>
+            <Box bgcolor={"white"} sx={{ height: "20%" }}  style = {{margin: "0px 0"}} className="info">
+                <h1>about</h1>
             </Box>
-            <br className='info' style = {{height: "10%"}}></br>
+            <br className='info' ></br>
             <Box bgcolor={"white"} sx={{ height: "20%"}} className="info">
 
             </Box>
