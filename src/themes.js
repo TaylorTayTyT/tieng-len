@@ -9,7 +9,7 @@ const topBar = createTheme({
             main: "#f2bdcb"
         },
         secondary: {
-            main: "#daf3d4"
+            main: "#3e3830"
         }
     }
 })

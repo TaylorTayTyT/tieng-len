@@ -20,7 +20,7 @@ function Title() {
     return (
         <div>
         <Container className='topBar' maxWidth="xl" sx={{ height: "300px" }}>
-            <Box sx={{ color: 'primary.contrastText', p: 2, height: "10%", textAlign: 'center', fontFamily: 'roboto', }}>
+            <Box sx={{color: 'primary.contrastText', p: 2, height: "10%", textAlign: 'center', fontFamily: 'roboto', }}>
                 <Grid container spacing={1} style={{ color: topBar.palette.primary.main, background: topBar.palette.secondary.main}}>
                     <Grid item xs={2} md={2}>
                         <Item>

@@ -1,13 +1,11 @@
 
 import "./App.css"
 import Card from "./Components/Card";
-import Board from "./Components/Board";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { Container } from "@material-ui/core";
-import Grid from '@mui/material/Grid';
 import { useEffect, useState } from "react";
 
 const canvas = document.getElementById("canv");
@@ -36,7 +34,7 @@ function App() {
   return (
     <div>
       <div className="headerTitle">
-        <h1>Tieng Len</h1>
+        <h1>Taylor Nguyen</h1>
         {data.name}
       </div>
       <div className="card">
