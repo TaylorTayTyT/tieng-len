@@ -3,13 +3,13 @@ import { createTheme} from '@material-ui/core/styles';
 const topBar = createTheme({
     palette: {
         primary: {
-            main: "#000000"
+            main: "#FFFFFF"
         },
         watermelonpink: {
             main: "#f2bdcb"
         },
         secondary: {
-            main: "#3e3830"
+            main: "#000000"
         }
     }
 })

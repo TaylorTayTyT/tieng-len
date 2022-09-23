@@ -21,10 +21,10 @@ function Title() {
         <div>
         <Container className='topBar' maxWidth="xl" sx={{ height: "300px" }}>
             <Box sx={{color: 'primary.contrastText', p: 2, height: "10%", textAlign: 'center', fontFamily: 'roboto', }}>
-                <Grid container spacing={1} style={{ color: topBar.palette.primary.main, background: topBar.palette.secondary.main}}>
+                <Grid container spacing={1} style={{ color: "white", background: topBar.palette.secondary.main}}>
                     <Grid item xs={2} md={2}>
                         <Item>
-                            <Button variant='text' className='topabout' onClick={about}>
+                            <Button variant='text' className='topabout' onClick={about} color="primary">
                                 about
                             </Button>
 
