@@ -63,6 +63,14 @@ canvas {
   line-height: 60px;
 }
 
+.topBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 800px;
+}
+
 
 @keyframes App-logo-spin {
   from {

@@ -1,5 +1,4 @@
 import { Box, Container } from '@mui/material';
-import "./App.css"
 
 function GameBox() {
     return (
