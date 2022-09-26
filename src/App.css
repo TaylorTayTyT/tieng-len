@@ -88,3 +88,8 @@ canvas {
 Box{
   color: aqua;
 }
+
+.stars {
+  max-width: 30px;
+  max-height: 40px;
+}
