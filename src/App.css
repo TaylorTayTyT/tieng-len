@@ -69,6 +69,19 @@ canvas {
   align-items: center;
   justify-content: center;
   top: 800px;
+  transform: rotate(90deg);
+}
+
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+.spin {
+  animation-name: spinning;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
 }
 
 
@@ -90,6 +103,9 @@ Box{
 }
 
 .stars {
+  display: flex;
   max-width: 30px;
   max-height: 40px;
+  padding-top: 0px;
+  padding-right: 130px;
 }

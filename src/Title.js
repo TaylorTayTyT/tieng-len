@@ -5,7 +5,7 @@ import * as React from 'react';
 import logo from "./Studio_Project.png";
 import "./App.css";
 import star from "./star.gif";
-import { maxWidth } from '@mui/system';
+import { padding } from '@mui/system';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -19,12 +19,28 @@ const Item = styled(Paper)(({ theme }) => ({
 function Title() {
     return (
         <Container>
-            <div className = 'stars'>
+            <div className='stars'>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
                 <img className = 'stars' src = {star} alt = "star"></img>
             </div>
+            <div className='stars'>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+                <img className = 'stars' src = {star} alt = "star"></img>
+            </div>
+
             <div className='topBar'>
                 <img src={logo}
-                    alt="logo">
+                    alt="logo" class= 'spin'>
                     </img>
             </div>
         </Container>
