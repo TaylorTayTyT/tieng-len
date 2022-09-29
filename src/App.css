@@ -36,6 +36,7 @@ canvas {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  max-width: 1080px;
 }
 
 .button1 {
@@ -70,6 +71,7 @@ canvas {
   justify-content: center;
   top: 800px;
   transform: rotate(90deg);
+  max-width: 1080px;
 }
 
 @keyframes spinning {
@@ -105,7 +107,7 @@ Box{
 .stars {
   display: flex;
   max-width: 30px;
-  max-height: 40px;
-  padding-top: 0px;
-  padding-right: 130px;
+  max-height: 100px;
+  padding-top: 60px;
+  padding-right: 160px;
 }

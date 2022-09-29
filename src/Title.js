@@ -5,7 +5,7 @@ import * as React from 'react';
 import logo from "./Studio_Project.png";
 import "./App.css";
 import star from "./star.gif";
-import { padding } from '@mui/system';
+import { Box, width } from '@mui/system';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -19,28 +19,27 @@ const Item = styled(Paper)(({ theme }) => ({
 function Title() {
     return (
         <Container>
-            <div className='stars'>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-            </div>
-            <div className='stars'>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-                <img className = 'stars' src = {star} alt = "star"></img>
-            </div>
+            <Box className="stars">
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+            </Box>
 
+            <Box className="stars">
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+                <img className = "stars" src = {star} alt = "star"></img>
+            </Box>
             <div className='topBar'>
-                <img src={logo}
-                    alt="logo" class= 'spin'>
+                <img src={logo} alt="logo" className= 'spin'>
                     </img>
             </div>
         </Container>
